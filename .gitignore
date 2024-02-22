@@ -1,0 +1,5 @@
+# Ignore stepik directory
+/stepik/
+
+# Ignore files inside stepik directory
+/stepik/*
