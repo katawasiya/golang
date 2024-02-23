@@ -22,7 +22,7 @@ func worker(id int, jobs <-chan int, wg *sync.WaitGroup) {
 		start := time.Now()
 		<-requestToAcquiring()
 		elapsed := time.Since(start)
-		fmt.Printf("Paymant %d finished bank transfer %d in %v\n", id, j, elapsed)
+		fmt.Printf("Worker %d finished bank transfer %d in %v\n", id, j, elapsed)
 	}
 }
 
